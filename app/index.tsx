@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Text, View, StyleSheet, Button } from "react-native";
 import ListaProdutos from "./Componentes/Adaptadores/ListaProdutos";
 import Style from "./Styles/Default";
+import axios from "axios"
+
 
 const produtos = [
   {id: 1, nome: "Coca", preco: 5.5 },
@@ -14,7 +16,19 @@ var contador=0;
 
 export default function Index() {
 
- let [contador, setContador] = useState(0)
+ let [contador, setContador] = useState(0);
+ let [produtos,setProdutos]= useState([]);
+
+ useEffect(()=>{
+
+ },[])
+
+ function carregaProduto(){
+  axios.get('https://app-api-tapwm.onrender.com/api/produtos')
+  .then((resp)=>{
+
+  })
+ }
 
 
   return (
@@ -27,7 +41,6 @@ export default function Index() {
 <Button title={contador.toString()}
 onPress={()=>{clicarBotao()}}
 ></Button>
-
     </View>
   );
 
