@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native"
 
-const Style = StyleSheet.create(
+const style = StyleSheet.create(
     {
         container:{
             flex: 1,
@@ -28,6 +28,12 @@ const Style = StyleSheet.create(
             color: '#333',
             fontWeight: 'bold',
           },
+          image:{
+            width:100,
+            height:100,
+            objectFit:"contain",
+            resizeMode:"contain"
+          }
         })
-        export default Style  
+        export default style  
         
