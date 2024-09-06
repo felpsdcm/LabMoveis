@@ -4,14 +4,6 @@ import ListaProdutos from "./Componentes/Adaptadores/ListaProdutos";
 import Style from "./Styles/Default";
 import axios from 'axios';
 
-const produtos = [
-  {id: 1, nome: "Coca", preco: 5.5 },
-  {id: 2, nome: "Pepsi", preco: 5.5 },
-  {id: 3, nome: "Fanta", preco: 5.5 },
-  {id: 4, nome: "Itubaina", preco: 5.5 },
-];
-
-var contador=0;
 
 export default function Index() {
 
